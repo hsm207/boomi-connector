@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenericConnectorDescriptor>
+    <operation types="EXECUTE" supportsBrowse="false" customTypeId="hello" customTypeLabel="Hello">
+        <field id="name" label="name" type="string">
+            <helpText>This field is included in the output of this connector operation</helpText>
+            <defaultValue>World!</defaultValue>
+        </field>
+    </operation>
+</GenericConnectorDescriptor>
