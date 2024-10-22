@@ -6,7 +6,9 @@
     <field id="weaviateApiKey" label="Weaviate API Key" type="password">
         <helpText>This field specifies the API key for Weaviate</helpText>
     </field>
-    <testConnection />
+    <testConnection method="CUSTOM">
+
+    </testConnection>
 
     <operation types="EXECUTE" supportsBrowse="false" customTypeId="hello" customTypeLabel="Hello">
         <field id="name" label="name" type="string">
