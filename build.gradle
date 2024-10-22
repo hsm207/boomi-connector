@@ -10,7 +10,7 @@ plugins {
 }
 
 connector {
-    sdkVersion '2.20.0'                                                   
+    sdkVersion '2.20.1'                                                   
     className 'com.boomi.sample.SampleConnector'
     // If you're building an OpenAPI connector using Gradle DSL plugin, you need not mention this className. 
     // The DSL has an internal Java class that it refers to.
