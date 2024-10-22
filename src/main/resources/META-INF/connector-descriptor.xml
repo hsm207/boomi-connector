@@ -3,7 +3,7 @@
     <field id="weaviateUrl" label="Weaviate URL" type="string">
         <helpText>This field specifies the URL for Weaviate</helpText>
     </field>
-    <field id="weaviateApiKey" label="Weaviate API Key" type="string">
+    <field id="weaviateApiKey" label="Weaviate API Key" type="password">
         <helpText>This field specifies the API key for Weaviate</helpText>
     </field>
     <testConnection />
