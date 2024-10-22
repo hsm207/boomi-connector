@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <GenericConnectorDescriptor>
+    <field id="weaviateUrl" label="Weaviate URL" type="string">
+        <helpText>This field specifies the URL for Weaviate</helpText>
+    </field>
+    <field id="weaviateApiKey" label="Weaviate API Key" type="string">
+        <helpText>This field specifies the API key for Weaviate</helpText>
+    </field>
     <testConnection />
 
     <operation types="EXECUTE" supportsBrowse="false" customTypeId="hello" customTypeLabel="Hello">
         <field id="name" label="name" type="string">
             <helpText>This field is included in the output of this connector operation</helpText>
             <defaultValue>World!</defaultValue>
-        </field>
-        <field id="weaviateUrl" label="Weaviate URL" type="string">
-            <helpText>This field specifies the URL for Weaviate</helpText>
-        </field>
-        <field id="weaviateApiKey" label="Weaviate API Key" type="string">
-            <helpText>This field specifies the API key for Weaviate</helpText>
         </field>
     </operation>
 </GenericConnectorDescriptor>
