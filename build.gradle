@@ -6,12 +6,16 @@
  */
 
 plugins {                    
-    id 'com.boomi.connector' version '0.5.0'                        
+    id 'com.boomi.connector' version '0.4.3'                        
 }
 
+test {
+
+    useJUnitPlatform()
+}
 connector {
     sdkVersion '2.20.1'                                                   
-    className 'com.boomi.sample.SampleConnector'
+    className 'com.boomi.connector.sample.HelloWorldConnector'
     // If you're building an OpenAPI connector using Gradle DSL plugin, you need not mention this className. 
     // The DSL has an internal Java class that it refers to.
 }
@@ -27,6 +31,10 @@ dependencies {
     api "com.boomi.connsdk:connector-sdk-util"
     api "commons-io:commons-io:2.8.0"
     implementation "com.boomi.util:boomi-util:2.3.8"
-    testImplementation "junit:junit:4.12"
+    // testImplementation "junit:junit:4.12"
+    testImplementation(platform('org.junit:junit-bom:5.11.3'))
+	testImplementation('org.junit.jupiter:junit-jupiter')
+	testRuntimeOnly('org.junit.platform:junit-platform-launcher')
+
     implementation "io.weaviate:client:4.8.2" 
 }

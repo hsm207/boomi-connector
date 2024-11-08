@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<GenericConnectorDescriptor>
+<GenericConnectorDescriptor requireConnectionForBrowse="true">
     <field id="weaviateUrl" label="Weaviate URL" type="string">
         <helpText>This field specifies the URL for Weaviate</helpText>
     </field>
